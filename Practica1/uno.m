@@ -5,7 +5,7 @@ x = zeros(1,9);
 x(3) = -2;
 
 figure 1
-plot(n,x,'bo','Linewidth',2)
+stem(n,x,'bo','Linewidth',2)
 grid
 
 % b) ---------------------------------------------------------------------------
@@ -17,7 +17,7 @@ for i = 4:7
 endfor
 
 figure 2
-plot(n,x,'bo','Linewidth',2)
+stem(n,x,'bo','Linewidth',2)
 grid
 
 % c) ---------------------------------------------------------------------------
@@ -29,7 +29,7 @@ for i = 4:7
 endfor
 
 figure 3
-plot(n,x,'bo','Linewidth',2)
+stem(n,x,'bo','Linewidth',2)
 grid
 
 % d) ---------------------------------------------------------------------------
@@ -41,7 +41,7 @@ for i = 1:5
 endfor
 
 figure 4
-plot(n,x,'bo','Linewidth',2)
+stem(n,x,'bo','Linewidth',2)
 grid
 
 % e) ---------------------------------------------------------------------------
@@ -53,5 +53,5 @@ for i = 3:12
 endfor
 
 figure 5
-plot(n,x,'bo','Linewidth',2)
+stem(n,x,'bo','Linewidth',2)
 grid

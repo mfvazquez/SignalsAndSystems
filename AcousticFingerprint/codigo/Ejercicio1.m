@@ -1,5 +1,5 @@
-info = audioinfo("caprici_di_diablo.wav");
-audio_doble = audioread("caprici_di_diablo.wav");
+info = audioinfo("audios/caprici_di_diablo.wav");
+audio_doble = audioread("audios/caprici_di_diablo.wav");
 
 audio = mean(audio_doble'(:,:));
  

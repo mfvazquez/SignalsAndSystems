@@ -1,6 +1,6 @@
-%funcion que devuelve las caracteristicas del espectrograma
-%Pre: E debe ser una matriz
-%Post: Retorna una matriz E que contiene 1 o 0
+% funcion que devuelve las caracteristicas del espectrograma
+% Pre: E debe ser una matriz
+% Post: Retorna una matriz E que contiene 1 o 0
 
 function F = caracteristicas(E)
 
@@ -13,8 +13,8 @@ for m = 1:M-1
       F(m,n-1) = 1;
     else 
       F(m,n-1) = 0;
-    endif;
-   endfor;  
-endfor;
+    endif
+   endfor  
+endfor
 
 endfunction

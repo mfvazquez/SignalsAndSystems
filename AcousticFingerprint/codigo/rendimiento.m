@@ -1,0 +1,11 @@
+fprintf('Tests de segmentos de audio:\n');
+tests([5 10 15], false,0,false,false,false);
+fprintf('Tests con ruido de 0dB\n');
+tests([5 10 15], true,0,false,false,false);
+fprintf('Tests con ruido de 10dB\n');
+tests([5 10 15], true,10,false,false,false);
+fprintf('Tests con ruido de 20dB\n');
+tests([5 10 15], true,20,false,false,false);
+fprintf('Tests con distorsion saturacion y ecualizacion\n');
+tests(10, false,0,true,true,false);
+saturacion;

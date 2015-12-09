@@ -28,12 +28,8 @@ for k=1:length(files)
     
     % Muestro por consola el archivo que analizamos
     fprintf('%d de %d: %s\n',k,length(files),file);
-    
     % Generamos la huella acustica H
-    % *************************************************
-    % ADAPTE ESTA LINEA PARA EJECUTAR SU IMPLEMENTACION
-    % *************************************************
-    H = generar_huella(path_file);
+    H = generar_huella_arch(path_file);
     
     % Guardamos la huella en la DB. A esta cancion se asigna el
     % identificador numerico k, el cual se guarda en la base de datos
@@ -43,5 +39,4 @@ for k=1:length(files)
 end
 
 % Guardamos la base de datos generada
-save('DB_v01.mat','DB')
-
+save('DB_v01.mat','DB','files');
